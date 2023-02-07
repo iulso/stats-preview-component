@@ -1,0 +1,48 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-default;
+  color: $color-neutral-white-2;
+  text-align: center;
+
+  @include respond(tab-land) {
+    text-align: left;
+  }
+}
+
+.heading {
+  font-family: 'Inter', sans-serif;
+  font-weight: $font-weight-bold;
+  color: $color-neutral-white-1;
+
+  &_primary {
+    padding-bottom: 1.5rem;
+    font-size: 2.7rem;
+
+    @include respond(tab-land) {
+      padding-bottom: 2.1rem;
+    }
+  }
+}
+
+.text {
+  line-height: 1.5;
+}
+
+.stats {
+  &__num {
+    font-size: 2.1rem;
+    line-height: 1.5;
+  }
+
+  &__text {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: $color-neutral-white-3;
+  }
+}
+
+.accent {
+  color: $color-primary-light;
+}

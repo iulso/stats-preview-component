@@ -1,0 +1,58 @@
+.card {
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  @include respond(tab-land) {
+    width: 80%;
+  }
+
+  &-image-wrapper {
+    position: relative;
+
+    img {
+      display: block;
+      width: 100%;
+
+      @include respond(tab-land) {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      background: rgba(88, 11, 136, 0.6);
+    }
+  }
+
+  &-description {
+    padding: 2.7rem 2.1rem;
+    background-color: $color-primary-dark-1;
+
+    @include respond(tab-land) {
+      padding: 6rem 9rem 6rem 5rem;
+    }
+
+    .stats {
+      margin-top: 3rem;
+
+      @include respond(tab-land) {
+        margin-top: 4.5rem;
+        padding-right: 4rem;
+      }
+
+      > *:not(:last-child) {
+        padding-bottom: 4.5rem;
+
+        @include respond(tab-land) {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

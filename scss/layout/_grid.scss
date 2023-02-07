@@ -1,0 +1,34 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  &-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .stats {
+      display: flex;
+      flex-direction: column;
+
+      @include respond(tab-land) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  @include respond(tab-land) {
+    flex-direction: row-reverse;
+
+    & > * {
+      width: 50%;
+    }
+  }
+}

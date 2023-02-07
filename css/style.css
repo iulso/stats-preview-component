@@ -1,0 +1,176 @@
+/* 
+- Mobile: < 375px
+- Desktop: 1440px >
+
+$breakpoint argument choices:
+- mobile
+- desktop
+
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: hsl(233deg, 47%, 7%);
+}
+
+.content {
+  min-height: 100vh;
+  padding: 6rem 2rem;
+}
+@media only screen and (min-width: 375px) {
+  .content {
+    padding: 10rem 4rem;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  text-align: center;
+}
+@media only screen and (min-width: 375px) {
+  body {
+    text-align: left;
+  }
+}
+
+.heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
+.heading_primary {
+  padding-bottom: 1.5rem;
+  font-size: 2.7rem;
+}
+@media only screen and (min-width: 375px) {
+  .heading_primary {
+    padding-bottom: 2.1rem;
+  }
+}
+
+.text {
+  line-height: 1.5;
+}
+
+.stats__num {
+  font-size: 2.1rem;
+  line-height: 1.5;
+}
+.stats__text {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: hsla(0deg, 0%, 100%, 0.6);
+}
+
+.accent {
+  color: hsl(277deg, 64%, 61%);
+}
+
+.card {
+  border-radius: 4px;
+  overflow: hidden;
+}
+@media only screen and (min-width: 375px) {
+  .card {
+    width: 80%;
+  }
+}
+.card-image-wrapper {
+  position: relative;
+}
+.card-image-wrapper img {
+  display: block;
+  width: 100%;
+}
+@media only screen and (min-width: 375px) {
+  .card-image-wrapper img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.card-image-wrapper::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background: rgba(88, 11, 136, 0.6);
+}
+.card-description {
+  padding: 2.7rem 2.1rem;
+  background-color: hsl(244deg, 38%, 16%);
+}
+@media only screen and (min-width: 375px) {
+  .card-description {
+    padding: 6rem 9rem 6rem 5rem;
+  }
+}
+.card-description .stats {
+  margin-top: 3rem;
+}
+@media only screen and (min-width: 375px) {
+  .card-description .stats {
+    margin-top: 4.5rem;
+    padding-right: 4rem;
+  }
+}
+.card-description .stats > *:not(:last-child) {
+  padding-bottom: 4.5rem;
+}
+@media only screen and (min-width: 375px) {
+  .card-description .stats > *:not(:last-child) {
+    padding-bottom: 0;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card-description .stats {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 375px) {
+  .card-description .stats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card > * {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

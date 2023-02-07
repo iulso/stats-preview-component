@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <main class="content">
+      <div class="card">
+        <figure class="card-image-wrapper">
+          <picture class="card-image">
+            <source
+              media="(1440px)"
+              srcset="./images/image-header-desktop.jpg"
+            />
+            <img
+              src="./images/image-header-mobile.jpg"
+              alt="Three women working at an office"
+            />
+          </picture>
+        </figure>
+        <div class="card-description">
+          <h1 class="heading heading_primary">
+            Get <strong class="accent">insights</strong> that help your business
+            grow.
+          </h1>
+          <p class="text">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <div class="stats">
+            <div class="stats__item">
+              <div class="stats__num stats__num_plus heading">10k+</div>
+              <div class="stats__text">companies</div>
+            </div>
+            <div class="stats__item">
+              <div class="stats__num heading">314</div>
+              <div class="stats__text">templates</div>
+            </div>
+            <div class="stats__item">
+              <div class="stats__num stats__num_plus heading">12m+</div>
+              <div class="stats__text">queries</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
